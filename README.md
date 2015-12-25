@@ -19,7 +19,7 @@ If I have a buffer of int16s for two-channels audio, then I should:
 
 2)  transform the values in this array with fft, to get real and imaginary components for the fft coefficients.
 
-3)  sqrt(re*re+im*im) for each coefficients to get the power for each frequency, and then divide those by the largest magnitude to scale to 0..1, and then multiply each by 255 for the grayscale value. 
+3)  sqrt(re * re + im * im) for each coefficients to get the power for each frequency, and then divide those by the largest magnitude to scale to 0..1, and then multiply each by 255 for the grayscale value. 
 
 4) Then scale the waveform samples (0.5 * int16 for -16k to 16k range?) to 0..1 as well?
 
