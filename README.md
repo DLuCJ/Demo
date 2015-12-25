@@ -37,6 +37,7 @@ Well, I'll try to get it working eventually.
 Credits
 ------- 
 Crinkler (exe packer) : http://crinkler.net/
+
 4klang (soft synth) : http://4klang.untergrund.net/
 
 The shaders are all modifications and/or combinations of previously-written shaders.
