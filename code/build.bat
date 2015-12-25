@@ -15,8 +15,6 @@ REM TODO - can we just build both with one exe?
 IF NOT EXIST ..\..\build mkdir ..\build
 pushd ..\build
 
-REM f 
-
 REM 32-bit build
 REM cl %CommonCompilerFlags% ..\code\win32_plat.cpp ..\code\4klang.obj /link -subsystem:windows,5.1 /NODEFAULTLIB /ENTRY:"entrypoint" %CommonLinkerFlags% 
 
