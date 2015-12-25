@@ -1,4 +1,5 @@
-
+//Modification of shader by Kali
+//See: https://www.shadertoy.com/view/XsBXWt
 static const char *fsh_kali=\
 "uniform float BPM;uniform vec3 iResolution;uniform float iGlobalTime;"
 "\n#define RAY_STEPS 150\n"
