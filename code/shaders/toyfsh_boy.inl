@@ -1,4 +1,5 @@
 // Modification of shader credited below
+// Combination of Boy, Metaballs - Cubic, Gameboy shaders
 // Created by inigo quilez - iq/2013
 // License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 
