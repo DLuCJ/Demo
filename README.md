@@ -123,11 +123,8 @@ in parallel (real-time).  Precalculation requires a few hundred
 bytes in extra executable size, however.  This option is toggled
 by a macro define in mzk.h, assuming USE_SYNTH is defined. 
 
-Music generated formulaically in othermzk.h is always precalculated,
-because it is very quick, and so there isn't a reason to generate
-the audio in real-time. 
-
-
+Music generated formulaically in othermzk.h is always precalculated, 
+for now.
 
 3RD PARTY SOFTWARE
 ----------------------------------------
