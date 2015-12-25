@@ -1,4 +1,5 @@
 //NOTE: credits to HLorenzi at Shadertoy
+//I only added some scrolling text to the top
 //https://www.shadertoy.com/view/Msj3zD
 
 static const char *fsh_mrio=\
