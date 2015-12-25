@@ -1,16 +1,10 @@
 @echo off
 
-REM FOR STORAGE
-REM d3d11.lib 
-
 set CommonCompilerFlags= -QIfist -O1 -Gr -GS- -Gs999999999 -nologo -Gm- -GR- -EHs-c-a- -Oi -WX -W4 -wd4244 -wd4201 -wd4100 -wd4189 -FC -Z7
 set CommonLinkerFlags= -opt:ref kernel32.lib user32.lib gdi32.lib winmm.lib opengl32.lib msvcrt.lib 
 
 REM TO BUILD MZK (requires nasm, 4klang .asm and .inc)
 REM nasmw.exe -fwin32 -o"4klang.obj" 4klang.asm
-
-REM *** HERE ARE THE LATER SIZE OPTS FLAGS, DONT USE RN
-REM TODO - can we just build both with one exe?
 
 IF NOT EXIST ..\..\build mkdir ..\build
 pushd ..\build
