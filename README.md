@@ -74,7 +74,7 @@ also exit whenever the music is finished playing.
 Otherwise, you can build a new executable as follows.
 The executable will still be in the build directory.
 
-The 4k Demo Framework is compiled in x86 mode using the
+The demo is compiled in x86 mode using the
 Microsoft vc++ compiler.
 
 To start up Microsoft cl (assuming standard installation path for Visual Studio):
