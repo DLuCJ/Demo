@@ -65,7 +65,7 @@ BUILD
 If you just want to run the demo:
 
 To run:
-kd_demo_prototype\build> win32_plat.exe
+demo\build> win32_plat.exe
 
 To exit:
 Press the esc key at any time.  Later, the demo will
@@ -84,7 +84,7 @@ For reference, this is what my call looks like:
 call c:\"Program Files (x86)"\"Microsoft visual studio 12.0"\vc\vcvarsall.bat x86
 
 To build:
-kd_demo_prototype\code> build.bat
+demo\code> build.bat
 
 Any warnings that may appear can probably be safely
 ignored, but it's up to user discretion.
