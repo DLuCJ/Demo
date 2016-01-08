@@ -3,9 +3,7 @@ Demo
 
 Version 1.0 (December 13, 2015)
 
-Note: there is one effect that doesn't work.  It's probably because I don't know
-what I'm doing when it comes to GLSL textures. However, based on my email to IQ, 
-it seems like I have the right general idea.
+Note: there is one effect that doesn't work, which relies on conversion of audio fft data to a 2D texture like in Shadertoy.  It's probably because I don't know what I'm doing when it comes to GLSL textures. However, based on my email to IQ (co-author of Shadertoy), it seems like I have the right general idea.
 
 *****
 
