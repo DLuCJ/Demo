@@ -81,6 +81,7 @@ int InitIntro( void )
   }
 
   //Sorensen in-place split-radix FFT
+  /*
   realfft_split_unshuffled(lpFftbuf,SAMPLES_TO_PROCESS);
 
   lpFftPows[0] = lpFftbuf[0];
@@ -112,7 +113,7 @@ int InitIntro( void )
   for(int i = 0; i < SAMPLES_TO_PROCESS/2; ++i) {
     lpNormWaveSamps[i] /= max2;
   }
-
+*/
   InitShader(&pid_arr[0],fsh_boy);
   InitShader(&pid_arr[1],fsh_loz);
   InitShader(&pid_arr[2],fsh_flap);
@@ -147,21 +148,22 @@ void intro_do( long time, DWORD sample  )
 
   //time in milliseconds
   if(time <= 63000){
-    GLuint tex;
-    glGenTextures(1,&tex);
-    ((PFNGLACTIVETEXTUREPROC)wglGetProcAddress("glActiveTexture"))(GL_TEXTURE0);
+    //GLuint tex;
+    //glGenTextures(1,&tex);
+    //((PFNGLACTIVETEXTUREPROC)wglGetProcAddress("glActiveTexture"))(GL_TEXTURE0);
     
-    glBindTexture(GL_TEXTURE_2D, tex);
+    //glBindTexture(GL_TEXTURE_2D, tex);
       
     oglUseProgram( pid_arr[0] );  
+    /*
     if(time > 23000 && time <= 44000){
-      /*
+      
       uint8 signal[1024];
       for(int i = 0; i < 512; ++i) {
 	signal[i] = (uint8)(lpFftPows[i+sample]*255);
 	signal[i+512]= (uint8)((lpNormWaveSamps[i+sample]*0.5+0.5)*255.0);
       }
-      */
+      
       
       uint8 signal[1024];
       for(int i = 0; i < 1024; ++i) {
@@ -174,9 +176,10 @@ void intro_do( long time, DWORD sample  )
       glTexParameteri(GL_TEXTURE_2D_ARRAY, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
       
     }
+    */
     InitShadUniforms(pid_arr[0],t);
-    GLint loc4 = oglGetUniformLocation(pid_arr[0],"iChannel0");
-    ((PFNGLUNIFORM1IPROC)wglGetProcAddress("glUniform1i"))(loc4,0);
+    //GLint loc4 = oglGetUniformLocation(pid_arr[0],"iChannel0");
+    //((PFNGLUNIFORM1IPROC)wglGetProcAddress("glUniform1i"))(loc4,0);
     
   }
   else if(time > 63000 && time <= 75000) {
